@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 const fs = require('fs-extra');
 
-const writeStream = fs.createWriteStream('books.csv')
+const writeStream = fs.createWriteStream('toscrape.csv')
 
 // URL de la página a la que haremos scraping
 const url = 'http://books.toscrape.com/';

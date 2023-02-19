@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 const fs = require('fs-extra');
 
-const writeStream = fs.createWriteStream('iberolibrerias.csv')
+const writeStream = fs.createWriteStream('elvirrey.csv')
 
 async function init() {
     const $ = await request({

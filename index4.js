@@ -2,7 +2,7 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const fs = require('fs-extra');
 
-const writeStream = fs.createWriteStream('ebooks.csv')
+const writeStream = fs.createWriteStream('buscalibre.csv')
 
 async function init() {
     const $ = await request({

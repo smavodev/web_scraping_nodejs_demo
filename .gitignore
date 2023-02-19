@@ -5,7 +5,7 @@ node_modules/
 
 # Archivos
 quotes.csv
-books.csv
-ebooks.csv
+toscrape.csv
+buscalibre.csv
 crisol.csv
-iberolibrerias.csv
+elvirrey.csv
