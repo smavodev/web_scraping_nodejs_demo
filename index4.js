@@ -20,7 +20,7 @@ async function init() {
         /* const rating = $(el).find('span.small starts').text(); */
         const ventas =  $(el).find('span.font-size-small').text() || '0';
         const price = $(el).find('p.precio-ahora').text() || 'S/ 0.00';
-        console.log(`${title}|${autores}|${ventas}|${price}\n`);
+        console.log(`${title}|${autores}|${ventas}|${price}`);
         writeStream.write(`${title}|${autores}|${ventas}|${price}\n`);
     })
 

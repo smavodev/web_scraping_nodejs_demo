@@ -18,7 +18,7 @@ async function init() {
         const producto = $(el).find('div.product strong a').text().trim() || 'Sin nombre';
         const autor = $(el).find('div.author').text().trim() || 'Sin Autor';
         const precio = $(el).find('span.price').text().trim() || 'Sin Precio';
-        console.log(`${img}|${producto}|${autor}|${precio}\n`)
+        console.log(`${img}|${producto}|${autor}|${precio}`)
         writeStream.write(`${img}|${producto}|${autor}|${precio}\n`);
     })
 

@@ -18,9 +18,9 @@ async function init(){
         const author = $(el).find('span small.author').text();
         const tags = [];
         $(el).find('.tags a.tag').each((i, el) => tags.push($(el).text()))
-        /* console.log(text, author, tags) */
-        /* console.log(text, author, tags.join(',')) */
-        writeStream.write(`${text}|${author}|${tags}\n`)
+        /* console.log(text, author, tags); */
+        console.log(text, author, tags.join(',')) 
+        writeStream.write(`${text}|${author}|${tags}\n`);
     })
     
 }
