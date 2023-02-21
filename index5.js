@@ -7,7 +7,7 @@ const writeStream = fs.createWriteStream('crisol.csv')
 async function init() {
     const $ = await request({
         // URL de la página a scrappear
-        uri: 'https://www.crisol.com.pe/los-mas-vendidos',
+        uri: 'https://www.crisol.com.pe/',
         transform: body => cheerio.load(body)
     });
 
